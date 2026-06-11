@@ -1,5 +1,13 @@
 # Attack Success Human Evaluation
 
+> **Superseded.** The current protocol is the blind behavior-change flow in
+> [README.md](README.md): `build_combined_blind.py` builds one mixed 200-sample
+> blind set (Pool A originally-successful + Pool B semantic-valid, 20 cells × 5
+> each), `eval_attack_successes.py` collects the valid/invalid/cannot-determine
+> verdict plus RQ4 failure modes, and `summarize_behavior_change.py` reports
+> Cohen's κ. `build_combined_blind.py` reuses the two samplers and the fallback
+> rules documented below, so this file is kept as reference for those rules.
+
 This workflow samples successful baseline attack outputs for local semantic-preservation review.
 
 ## Sample

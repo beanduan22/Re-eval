@@ -1,0 +1,8 @@
+# Private arbiter-side artifacts — never commit / never share with annotators
+blind_key.csv
+selected_semantic_valid_blind_key.csv
+
+# Annotator outputs (collected out-of-band, not version-controlled)
+*_results.json
+
+__pycache__/
