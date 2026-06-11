@@ -14,20 +14,20 @@ from __future__ import annotations
 VERDICTS = ("valid", "invalid", "cannot_determine")
 
 VERDICT_LABEL = {
-    "valid": "没改变 (valid)",
-    "invalid": "改变了 (invalid)",
-    "cannot_determine": "无法确定",
+    "valid": "Unchanged (valid)",
+    "invalid": "Changed (invalid)",
+    "cannot_determine": "Cannot determine",
 }
 
 # Failure-mode taxonomy for RQ4. Single-select, only meaningful when the verdict
-# is ``invalid``. (key, bilingual GUI label).
+# is ``invalid``. (key, GUI label).
 FAILURE_MODES = (
-    ("syntax_broken", "语法损坏 (syntax broken)"),
-    ("binding_broken", "绑定破坏 (binding broken)"),
-    ("scope_conflict", "作用域冲突 (scope conflict)"),
-    ("block_structure_broken", "块结构破坏 (block structure broken)"),
-    ("unsafe_insertion", "不安全插入 (unsafe insertion)"),
-    ("unconfirmable_rewrite", "无法确认的改写 (unconfirmable rewrite)"),
+    ("syntax_broken", "Syntax broken"),
+    ("binding_broken", "Binding broken"),
+    ("scope_conflict", "Scope conflict"),
+    ("block_structure_broken", "Block structure broken"),
+    ("unsafe_insertion", "Unsafe insertion"),
+    ("unconfirmable_rewrite", "Unconfirmable rewrite"),
 )
 
 FAILURE_MODE_KEYS = tuple(key for key, _label in FAILURE_MODES)

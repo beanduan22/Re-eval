@@ -28,14 +28,14 @@ python annotate.py
 Enter your name. For each of the 200 samples you'll see the original code (left)
 and the adversarial code with the change highlighted (right), and answer:
 
-> **这个改动是否改变了原代码的行为? / Does this change alter the behavior of the original code?**
+> **Does this change alter the behavior of the original code?**
 
-- **没改变 (valid)** — behavior preserved.
-- **改变了 (invalid)** — behavior changed; then pick **one failure mode**
-  (语法损坏 / 绑定破坏 / 作用域冲突 / 块结构破坏 / 不安全插入 / 无法确认的改写).
-- **无法确定 (cannot_determine)** — cannot confidently judge.
+- **Unchanged (valid)** — behavior preserved.
+- **Changed (invalid)** — behavior changed; then pick **one failure mode**
+  (Syntax broken / Binding broken / Scope conflict / Block structure broken / Unsafe insertion / Unconfirmable rewrite).
+- **Cannot determine** — cannot confidently judge.
 
-A soft **10-minute per-sample timer** nudges toward *无法确定* when it expires
+A soft **10-minute per-sample timer** nudges toward *Cannot determine* when it expires
 (it never overwrites a choice you already made). An optional note is recorded per
 sample. Your progress saves continuously.
 

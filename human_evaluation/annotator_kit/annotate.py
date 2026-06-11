@@ -5,10 +5,11 @@ For each sample the annotator answers one question:
 
     "Does this change alter the behavior of the original code?"
 
-Verdicts: 没改变 (valid) / 改变了 (invalid) / 无法确定 (cannot_determine).
+Verdicts: Unchanged (valid) / Changed (invalid) / Cannot determine.
 Choosing ``invalid`` reveals a single-select failure-mode tag (feeds RQ4) plus
 an optional note. A soft 10-minute per-sample timer nudges the annotator toward
-``无法确定`` when it expires. The view is blind: only task name + sample id show.
+``Cannot determine`` when it expires. The view is blind: only task name + sample
+id show.
 """
 from __future__ import annotations
 
@@ -147,8 +148,8 @@ class CodeReviewer:
         self.container = tk.Frame(root, bg="#1e1e1e")
         self.container.pack(fill=tk.BOTH, expand=True)
 
-        self.label_left = tk.Label(self.container, text="原始代码 (Original)", bg="#1e1e1e", fg="#cccccc", font=("Arial", 11, "bold"))
-        self.label_right = tk.Label(self.container, text="对抗代码 (Adversarial, diff 高亮)", bg="#1e1e1e", fg="#cccccc", font=("Arial", 11, "bold"))
+        self.label_left = tk.Label(self.container, text="Original code", bg="#1e1e1e", fg="#cccccc", font=("Arial", 11, "bold"))
+        self.label_right = tk.Label(self.container, text="Adversarial code (diff highlighted)", bg="#1e1e1e", fg="#cccccc", font=("Arial", 11, "bold"))
         self.label_left.place(relx=0.0, rely=0.0, relwidth=0.5, relheight=0.04)
         self.label_right.place(relx=0.5, rely=0.0, relwidth=0.5, relheight=0.04)
 
@@ -170,7 +171,7 @@ class CodeReviewer:
         self.diff_button = tk.Button(row1, text="Diff View: OFF", command=self.toggle_diff_view)
         self.diff_button.pack(side=tk.RIGHT)
 
-        tk.Label(bottom, text="这个改动是否改变了原代码的行为?", font=("Arial", 12, "bold"), bg="#f5f5f5").pack(anchor="w", padx=10, pady=(4, 2))
+        tk.Label(bottom, text="Does this change alter the behavior of the original code?", font=("Arial", 12, "bold"), bg="#f5f5f5").pack(anchor="w", padx=10, pady=(4, 2))
 
         # Row 2: the three verdict buttons.
         row2 = tk.Frame(bottom, bg="#f5f5f5")
@@ -186,7 +187,7 @@ class CodeReviewer:
         self.fm_frame = tk.Frame(bottom, bg="#f5f5f5")
         self.fm_frame.pack(fill=tk.X, padx=10, pady=(4, 2))
         self.fm_var = tk.StringVar(value="")
-        tk.Label(self.fm_frame, text="失败模式:", font=("Arial", 10, "bold"), bg="#f5f5f5").pack(side=tk.LEFT)
+        tk.Label(self.fm_frame, text="Failure mode:", font=("Arial", 10, "bold"), bg="#f5f5f5").pack(side=tk.LEFT)
         for key, text in FAILURE_MODES:
             tk.Radiobutton(
                 self.fm_frame, text=text, value=key, variable=self.fm_var,
@@ -196,12 +197,12 @@ class CodeReviewer:
         # Row 4: note + navigation.
         row4 = tk.Frame(bottom, bg="#f5f5f5")
         row4.pack(fill=tk.X, padx=10, pady=(4, 4))
-        tk.Label(row4, text="备注 (可选):", font=("Arial", 10), bg="#f5f5f5").pack(side=tk.LEFT)
+        tk.Label(row4, text="Note (optional):", font=("Arial", 10), bg="#f5f5f5").pack(side=tk.LEFT)
         self.note_var = tk.StringVar(value="")
         tk.Entry(row4, textvariable=self.note_var, font=("Arial", 10), width=48).pack(side=tk.LEFT, padx=6)
-        tk.Button(row4, text="下一条", command=self.next_code).pack(side=tk.RIGHT, padx=6)
-        tk.Button(row4, text="上一条", command=self.prev_code).pack(side=tk.RIGHT, padx=6)
-        tk.Button(row4, text="保存", command=self.save_score).pack(side=tk.RIGHT, padx=6)
+        tk.Button(row4, text="Next", command=self.next_code).pack(side=tk.RIGHT, padx=6)
+        tk.Button(row4, text="Previous", command=self.prev_code).pack(side=tk.RIGHT, padx=6)
+        tk.Button(row4, text="Save", command=self.save_score).pack(side=tk.RIGHT, padx=6)
 
         self.feedback_label = tk.Label(root, text="", font=("Arial", 9), bg="#222222", fg="white")
         self.show_code()
@@ -264,11 +265,11 @@ class CodeReviewer:
     def save_score(self):
         verdict = self.verdict_var.get()
         if verdict not in VERDICTS:
-            self.show_feedback("请先选择 没改变 / 改变了 / 无法确定")
+            self.show_feedback("Please choose Unchanged / Changed / Cannot determine first")
             return False
         failure_mode = self.fm_var.get() if verdict == "invalid" else ""
         if verdict == "invalid" and failure_mode not in FAILURE_MODE_KEYS:
-            self.show_feedback("判为 invalid 需要选一个失败模式")
+            self.show_feedback("'Changed (invalid)' requires selecting a failure mode")
             return False
 
         item = self.data[self.index]
@@ -289,7 +290,7 @@ class CodeReviewer:
         else:
             self.results[existing] = record
         self.result_path.write_text(json.dumps(self.results, indent=2, ensure_ascii=False), encoding="utf-8")
-        self.show_feedback(f"样本 {self.index + 1} 已保存")
+        self.show_feedback(f"Sample {self.index + 1} saved")
         return True
 
     # ---- navigation ----------------------------------------------------------
@@ -305,7 +306,7 @@ class CodeReviewer:
             self.index += 1
             self.show_code()
             return
-        if messagebox.askyesno("完成", "已到最后一条。\n现在结束吗?"):
+        if messagebox.askyesno("Finish", "You reached the last sample.\nFinish now?"):
             self.check_completion()
 
     def prev_code(self):
@@ -313,14 +314,14 @@ class CodeReviewer:
             self.index -= 1
             self.show_code()
         else:
-            self.show_feedback("已是第一条")
+            self.show_feedback("Already at the first sample")
 
     def check_completion(self):
         missing = [self.item_key(item) for item in self.data if self.result_index_by_key.get(self.item_key(item)) is None]
         if missing:
-            messagebox.showwarning("未完成", f"还有未标注的样本。\n缺失: {len(missing)}")
+            messagebox.showwarning("Incomplete", f"Some samples are not annotated yet.\nMissing: {len(missing)}")
             return False
-        messagebox.showinfo("完成", "全部样本已标注。")
+        messagebox.showinfo("Completed", "All samples annotated.")
         self.root.destroy()
         return True
 
@@ -330,10 +331,10 @@ class CodeReviewer:
         remaining = TIMEOUT_SECONDS - elapsed
         if remaining > 0:
             mm, ss = divmod(int(remaining), 60)
-            self.timer_label.config(text=f"剩余 {mm:02d}:{ss:02d}", fg="#333333" if remaining > 60 else "#d00000")
+            self.timer_label.config(text=f"Time left {mm:02d}:{ss:02d}", fg="#333333" if remaining > 60 else "#d00000")
         else:
             self.timed_out = True
-            self.timer_label.config(text="超时 → 建议标 无法确定", fg="#d00000")
+            self.timer_label.config(text="Time up -> suggest 'Cannot determine'", fg="#d00000")
             if not self.verdict_var.get():
                 self.set_verdict("cannot_determine")
         self.root.after(1000, self.tick)
@@ -351,7 +352,7 @@ class CodeReviewer:
             highlight_adv_with_added(self.text_right, orig, adv, language)
 
         task_name = item.get("Task Name", item.get("Task", ""))
-        self.progress_label.config(text=f"样本 {self.index + 1} / {len(self.data)}    任务: {task_name}")
+        self.progress_label.config(text=f"Sample {self.index + 1} / {len(self.data)}    Task: {task_name}")
         self.root.title(f"Behavior-Change Annotation - {self.index + 1}/{len(self.data)} - User: {self.username}")
 
         # Restore any prior annotation for this sample.

@@ -59,14 +59,14 @@ pip install -r requirement.txt
 python annotate.py
 ```
 
-For every sample the GUI asks **“这个改动是否改变了原代码的行为?”** with one choice:
+For every sample the GUI asks **"Does this change alter the behavior of the original code?"** with one choice:
 
-- **没改变 (valid)** — behavior preserved (a legitimate adversarial example).
-- **改变了 (invalid)** — behavior changed. Reveals a single-select **failure-mode**
-  tag (feeds RQ4): 语法损坏 / 绑定破坏 / 作用域冲突 / 块结构破坏 / 不安全插入 / 无法确认的改写.
-- **无法确定 (cannot_determine)** — cannot confidently judge.
+- **Unchanged (valid)** — behavior preserved (a legitimate adversarial example).
+- **Changed (invalid)** — behavior changed. Reveals a single-select **failure-mode**
+  tag (feeds RQ4): Syntax broken / Binding broken / Scope conflict / Block structure broken / Unsafe insertion / Unconfirmable rewrite.
+- **Cannot determine** — cannot confidently judge.
 
-A soft **10-minute per-sample timer** nudges toward *无法确定* on expiry (it never
+A soft **10-minute per-sample timer** nudges toward *Cannot determine* on expiry (it never
 overwrites an existing choice). An optional free-text note is recorded per sample.
 
 Output: `<username>_blind_samples_results.json`.
