@@ -1,135 +1,106 @@
-# Re-eval Human Evaluation Package
+# Re-eval — Human Evaluation Package
 
-This repository contains two 200-sample human evaluation sets and a local GUI
-for judging whether adversarial code preserves syntax/semantics relative to the
-original code.
+Two authors **independently and blindly** judge, for each sampled attack output,
+**whether the change alters the behavior of the original code**. Disagreements go
+to a third-person arbiter; we report Cohen's κ.
 
-## Contents
+The samples come from two pools, mixed and shuffled into **one 200-sample blind
+set**:
+
+| Pool | Source | Size | Role |
+| --- | --- | --- | --- |
+| **A** | originally-successful attacks | 20 (method × task) cells × 5 = **100** | motivation numbers |
+| **B** | semantic-valid survivors (passed syntax + semantic audit) | same 20 cells × 5 = **100** | validation numbers |
+
+---
+
+## If you are an annotator — start here
+
+You only need the folder [`human_evaluation/annotator_kit/`](human_evaluation/annotator_kit).
+Nothing else.
+
+```bash
+cd human_evaluation/annotator_kit
+pip install -r requirement.txt   # Tkinter + Pygments (see note below)
+python annotate.py
+```
+
+Enter your name. For each of the 200 samples you'll see the original code (left)
+and the adversarial code with the change highlighted (right), and answer:
+
+> **这个改动是否改变了原代码的行为? / Does this change alter the behavior of the original code?**
+
+- **没改变 (valid)** — behavior preserved.
+- **改变了 (invalid)** — behavior changed; then pick **one failure mode**
+  (语法损坏 / 绑定破坏 / 作用域冲突 / 块结构破坏 / 不安全插入 / 无法确认的改写).
+- **无法确定 (cannot_determine)** — cannot confidently judge.
+
+A soft **10-minute per-sample timer** nudges toward *无法确定* when it expires
+(it never overwrites a choice you already made). An optional note is recorded per
+sample. Your progress saves continuously.
+
+When finished, send back the single file
+`<yourname>_blind_samples_results.json`. That's it — you never see the attack
+method, the model, or the auto-validator's verdict.
+
+> **Tkinter note:** on some Linux systems Tkinter ships via the system package
+> manager, not pip (e.g. `sudo apt install python3-tk`).
+
+---
+
+## Repository layout
 
 ```text
 human_evaluation/
-  eval_attack_successes.py
-  requirement.txt
-
-  sample_attack_successes.py
-  selected_attack_successes.json
-  selected_attack_successes_summary.csv
-
-  sample_semantic_valid_blind.py
-  selected_semantic_valid_blind_samples.json
-  selected_semantic_valid_blind_key.csv
-  selected_semantic_valid_blind_summary.csv
-
-  ATTACK_SUCCESS_REVIEW.md
+├── annotator_kit/            ← give THIS folder to annotators (self-contained)
+│   ├── annotate.py               blind GUI
+│   ├── protocol.py               verdict + failure-mode definitions
+│   ├── blind_samples.json        the 200 blind samples
+│   ├── requirement.txt           pip deps
+│   └── README.md                 annotator instructions
+│
+├── build_combined_blind.py       (maintainer) build the set + package the kit
+├── summarize_behavior_change.py  (maintainer) κ + per-pool + RQ4 analysis
+├── protocol.py                   source of truth for the taxonomy
+└── sample_attack_successes.py / sample_semantic_valid_blind.py   samplers
 ```
 
-## Set 1: Successful Attack Samples
+The private key that maps each sample id back to pool / method / model /
+validator verdict (`blind_key.csv`) is **not** committed — it stays with the
+arbiter.
 
-File for annotation:
+---
 
-```text
-human_evaluation/selected_attack_successes.json
-```
+## If you are the arbiter / maintainer
 
-This set has 200 examples: 10 examples for each applicable task-method cell
-from the study setup table. Models are pooled rather than sampled separately.
-
-`CS-MHM` had empty source CSVs in the local workspace, so its 10 examples are
-filled from poorer successful CS attacks. Those rows are marked in the JSON with
-`Fallback Source Method` and `Sampling Note`.
-
-Run:
+**1. Build the blind set and package the kit** (needs the STRIKE workspace +
+result CSVs):
 
 ```bash
-python human_evaluation/eval_attack_successes.py \
-  --data human_evaluation/selected_attack_successes.json
+python -B human_evaluation/build_combined_blind.py --include-archive
 ```
 
-## Set 2: Blind Syntax+Semantic-Pass Samples
+This writes `annotator_kit/blind_samples.json` (and refreshes the kit's
+`protocol.py`, `requirement.txt`, `README.md`), plus the private `blind_key.csv`
+and `blind_summary.csv`.
 
-File for annotation:
+**2. Collect** each annotator's `<name>_blind_samples_results.json`. You also
+annotate a set yourself to serve as the arbiter.
 
-```text
-human_evaluation/selected_semantic_valid_blind_samples.json
-```
-
-This set also has 200 examples: 10 examples for each applicable task-method
-cell, sampled from rows that passed stored syntax and semantic audits.
-
-Annotators should only receive:
-
-```text
-human_evaluation/selected_semantic_valid_blind_samples.json
-```
-
-Do not give annotators this private mapping file:
-
-```text
-human_evaluation/selected_semantic_valid_blind_key.csv
-```
-
-The blind JSON intentionally omits method, model, source CSV, and original index
-fields. The key file restores those fields for later analysis.
-
-Run:
+**3. Summarize** — Cohen's κ, third-person arbitration, per-pool numbers, and the
+RQ4 failure-mode breakdown:
 
 ```bash
-python human_evaluation/eval_attack_successes.py \
-  --data human_evaluation/selected_semantic_valid_blind_samples.json
+python human_evaluation/summarize_behavior_change.py \
+  alice_blind_samples_results.json bob_blind_samples_results.json \
+  --key human_evaluation/blind_key.csv \
+  --arbiter your_blind_samples_results.json
 ```
 
-## Install
+- **Pool A** (motivation): `invalid` share = fraction of *reported-successful*
+  attacks that actually broke behavior.
+- **Pool B** (validation): `valid` share = how often humans confirm the auto
+  semantic-validator's surviving examples.
 
-The GUI uses Tkinter and Pygments.
-
-```bash
-pip install -r human_evaluation/requirement.txt
-```
-
-On some Linux systems Tkinter is installed through the system package manager
-rather than pip.
-
-## Output
-
-The GUI asks for a username and writes:
-
-```text
-<username>_<sample_file_stem>_results.json
-```
-
-For example:
-
-```text
-alice_selected_semantic_valid_blind_samples_results.json
-```
-
-Labels are:
-
-- `Preserved`
-- `Changed`
-- `Unclear`
-
-## Regenerating Samples
-
-The sampler scripts expect the original STRIKE workspace and result CSVs to be
-present. They are included here for reproducibility of the sampling procedure,
-but the checked-in JSON/CSV sample files are ready to annotate directly.
-
-Successful attack set:
-
-```bash
-python -B human_evaluation/sample_attack_successes.py \
-  --include-archive \
-  --out human_evaluation/selected_attack_successes.json \
-  --summary-out human_evaluation/selected_attack_successes_summary.csv
-```
-
-Blind syntax+semantic-pass set:
-
-```bash
-python -B human_evaluation/sample_semantic_valid_blind.py \
-  --include-archive \
-  --out human_evaluation/selected_semantic_valid_blind_samples.json \
-  --key-out human_evaluation/selected_semantic_valid_blind_key.csv \
-  --summary-out human_evaluation/selected_semantic_valid_blind_summary.csv
-```
+`protocol.py` is the single source of truth for the verdict and failure-mode
+taxonomy — edit it there and both the GUI and the summarizer pick it up.
