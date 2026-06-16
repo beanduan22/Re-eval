@@ -1,0 +1,1802 @@
+[
+  {
+    "Sample ID": "H0001",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 34.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0002",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Method parameters and file stream constructors are malformed, read/write calls reference broken (iloggetadurl, writeurlr, regret)",
+    "elapsed_seconds": 335.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0003",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 41.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0004",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 31.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0005",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "ideally variables should start with small letters, not capitals (in adversarial code)",
+    "elapsed_seconds": 38.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0006",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0007",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "unsafe_insertion",
+    "note": "Replaces \"\\n\" with empty/no newline strings (Changed Output)",
+    "elapsed_seconds": 36.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0008",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 74.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0009",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 42.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0010",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0011",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 34.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0012",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 63.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0013",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 42.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0014",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0015",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 49.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0016",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 57.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0017",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 53.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0018",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "Multiple variables are renamed to \"url\" - causing invalid calls",
+    "elapsed_seconds": 103.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0019",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Invalid array indexes (0x3size, btargetx52) and replaces hci_table with unrelated indexing",
+    "elapsed_seconds": 230.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0020",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "PriorityQueue is a class - not variable",
+    "elapsed_seconds": 300.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0021",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 90.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0022",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0023",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "String literals broken at DPRINTF format strings; code might not compile",
+    "elapsed_seconds": 224.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0024",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 122.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0025",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "reserved keyword class used",
+    "elapsed_seconds": 119.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0026",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "values replaced with random or undefined names",
+    "elapsed_seconds": 142.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0027",
+    "Task": "CS",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "cant change ObjectifyService's function as it's a reference, not defined locally",
+    "elapsed_seconds": 127.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0028",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 44.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0029",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 44.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0030",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 27.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0031",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Resource lookup line is malformed (libRL systemloader) and spatchappend(entry) is invalid; code would not compile",
+    "elapsed_seconds": 167.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0032",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 28.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0033",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "url is redeclared as local variable",
+    "elapsed_seconds": 100.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0034",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 29.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0035",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "while body missing brackets now cause 2 lines",
+    "elapsed_seconds": 128.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0036",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 143.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0037",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 31.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0038",
+    "Task": "CS",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "malformed variables and missing = operator",
+    "elapsed_seconds": 179.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0039",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 57.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0040",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 36.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0041",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 70.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0042",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 13.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0043",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 118.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0044",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 204.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0045",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 58.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0046",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "url is declared twice in the same block as InputStream and byte[]",
+    "elapsed_seconds": 93.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0047",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "Channel variable declared as iinputConnection but used as inputConnection",
+    "elapsed_seconds": 101.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0048",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 60.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0049",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 39.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0050",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 85.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0051",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 36.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0052",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 42.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0053",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 46.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0054",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 22.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0055",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 161.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0056",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 70.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0057",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 102.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0058",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "urlConn is declared twice as both Connection and Statement",
+    "elapsed_seconds": 90.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0059",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 70.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0060",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 80.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0061",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 19.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0062",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 55.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0063",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 87.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0064",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0065",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 63.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0066",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 14.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0067",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 49.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0068",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 137.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0069",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "malformed println and \"seldir seldir\" seems wrong",
+    "elapsed_seconds": 85.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0070",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 107.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0071",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 59.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0072",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 112.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0073",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 14.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0074",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 21.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0075",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0076",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 32.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0077",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Math.present doesnt exist, Java string literals are broken because of \\n again",
+    "elapsed_seconds": 54.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0078",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 14.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0079",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0080",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0081",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 15.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0082",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "non-existent bindings, iram_alias, eof, etc",
+    "elapsed_seconds": 251.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0083",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 22.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0084",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0085",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "Might affect the function calls of this class",
+    "elapsed_seconds": 273.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0086",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0087",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 21.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0088",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 71.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0089",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 59.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0090",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 36.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0091",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "Import changes from stdin to nonexistent sys.char; import/binding failure",
+    "elapsed_seconds": 133.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0092",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0093",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "url defined twice",
+    "elapsed_seconds": 44.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0094",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 29.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0095",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 27.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0096",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 26.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0097",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 26.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0098",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 21.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0099",
+    "Task": "CS",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "malformed variables and missing = operator",
+    "elapsed_seconds": 49.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0100",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 51.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0101",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 25.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0102",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 16.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0103",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 19.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0104",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "System.url.println is not valid",
+    "elapsed_seconds": 20.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0105",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 14.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0106",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 109.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0107",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 15.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0108",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0109",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 46.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0110",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 14.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0111",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "undefined lurl + Java string literals are broken because of \\n again",
+    "elapsed_seconds": 89.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0112",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "is.read(buffer) was changed to is.open(url); InputStream has no open(byte[]) method",
+    "elapsed_seconds": 16.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0113",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 20.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0114",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 14.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0115",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0116",
+    "Task": "CS",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Malformed variables, compile issue",
+    "elapsed_seconds": 82.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0117",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 55.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0118",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 30.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0119",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 49.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0120",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 34.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0121",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 24.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0122",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0123",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 23.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0124",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "Java String has length() not Length()",
+    "elapsed_seconds": 56.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0125",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 14.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0126",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "hi is declared twice",
+    "elapsed_seconds": 66.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0127",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0128",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 16.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0129",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 53.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0130",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 14.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0131",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "System.in becomes System.prss",
+    "elapsed_seconds": 45.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0132",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 31.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0133",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0134",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 124.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0135",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 14.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0136",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 64.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0137",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0138",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0139",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0140",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0141",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0142",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0143",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 41.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0144",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 14.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0145",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0146",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0147",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0148",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "changed python raw_input() to seen() - doesnt exist",
+    "elapsed_seconds": 53.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0149",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "import changed from sys.stdin ro sys.find_points_3d/likedFlavors",
+    "elapsed_seconds": 63.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0150",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0151",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 58.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0152",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 13.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0153",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0154",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "IOUtils.copy(is, baos) changed to IOUtils.cache(its, hais)",
+    "elapsed_seconds": 83.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0155",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0156",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0157",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0158",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 57.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0159",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 13.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0160",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "print still uses {t} and {res}",
+    "elapsed_seconds": 39.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0161",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "raw_input() to undefined bathroom()",
+    "elapsed_seconds": 118.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0162",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 17.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0163",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 14.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0164",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "address and physical written twice",
+    "elapsed_seconds": 104.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0165",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0166",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0167",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0168",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 38.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0169",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0170",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "value changed from VHOST_IOTLB_INVALIDATE to pix_fmt",
+    "elapsed_seconds": 40.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0171",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 27.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0172",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "sorlibparams[i] is invalid",
+    "elapsed_seconds": 41.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0173",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 16.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0174",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "url defined twice as File and String",
+    "elapsed_seconds": 42.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0175",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "malformed parameter - inflaInFlationshasPictureSize and missing operators",
+    "elapsed_seconds": 73.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0176",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0177",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "raw_input().shootlist() and heapify() instead of .split() and xrange()",
+    "elapsed_seconds": 141.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0178",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "harper.download, zip.ntry, reader.download are new",
+    "elapsed_seconds": 53.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0179",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "InputStream has no connect(byte[])",
+    "elapsed_seconds": 10.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0180",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 13.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0181",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 63.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0182",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Inner loop redeclares int i inside the outer for (int i=0)",
+    "elapsed_seconds": 13.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0183",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "outlink->out_buf to outlink->outdbuffer",
+    "elapsed_seconds": 40.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0184",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0185",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 16.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0186",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0187",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 36.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0188",
+    "Task": "CS",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "Java string literals are broken because of \\n again",
+    "elapsed_seconds": 31.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0189",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0190",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "System.project.println is wrong",
+    "elapsed_seconds": 14.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0191",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0192",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0193",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0194",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 45.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0195",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 13.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0196",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0197",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0198",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 12.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0199",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0200",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "SRunner to J2kDecoderContext, CK_NORMAL to PNPMMIO_SIZE",
+    "elapsed_seconds": 70.0,
+    "timed_out": false
+  }
+]

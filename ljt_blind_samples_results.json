@@ -1,0 +1,1802 @@
+[
+  {
+    "Sample ID": "H0001",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 3.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0002",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "",
+    "elapsed_seconds": 82.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0003",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 19.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0004",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 221.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0005",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 69.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0006",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 2.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0007",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 13.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0008",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 68.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0009",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 50.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0010",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 44.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0011",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 17.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0012",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 29.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0013",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 7.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0014",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 2.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0015",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 2.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0016",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "",
+    "elapsed_seconds": 1.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0017",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 6.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0018",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "",
+    "elapsed_seconds": 17.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0019",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "",
+    "elapsed_seconds": 59.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0020",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 479.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0021",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 22.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0022",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 29.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0023",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 107.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0024",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 61.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0025",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "",
+    "elapsed_seconds": 37.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0026",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "The constant was corrupted",
+    "elapsed_seconds": 49.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0027",
+    "Task": "CS",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "wrong service call .ofy()->.fy()",
+    "elapsed_seconds": 87.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0028",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 4.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0029",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 20.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0030",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 36.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0031",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "spatchappend(entry);",
+    "elapsed_seconds": 1.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0032",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 21.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0033",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "duplicate url name",
+    "elapsed_seconds": 40.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0034",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 18.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0035",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "unsafe_insertion",
+    "note": "increment changed assignment",
+    "elapsed_seconds": 56.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0036",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 121.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0037",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 15.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0038",
+    "Task": "CS",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "mismatched variable names",
+    "elapsed_seconds": 182.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0039",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 55.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0040",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 29.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0041",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 26.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0042",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 169.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0043",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 53.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0044",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 43.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0045",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 30.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0046",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "duplicate url variable",
+    "elapsed_seconds": 1.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0047",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 27.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0048",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "wrong struct field pb",
+    "elapsed_seconds": 66.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0049",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 22.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0050",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 55.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0051",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 76.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0052",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 51.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0053",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 55.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0054",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 30.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0055",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 36.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0056",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 29.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0057",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 99.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0058",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "duplicate urlConn variable",
+    "elapsed_seconds": 42.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0059",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 30.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0060",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 54.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0061",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 28.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0062",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 30.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0063",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 27.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0064",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 28.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0065",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 184.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0066",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 34.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0067",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 24.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0068",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 32.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0069",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "block_structure_broken",
+    "note": "misplaced print",
+    "elapsed_seconds": 31.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0070",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "global name collision",
+    "elapsed_seconds": 460.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0071",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 27.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0072",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 65.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0073",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 138.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0074",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 37.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0075",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 37.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0076",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 53.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0077",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "invalid Math.present method call",
+    "elapsed_seconds": 8.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0078",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 166.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0079",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 68.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0080",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 23.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0081",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 27.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0082",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "renamed macros break bindings",
+    "elapsed_seconds": 151.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0083",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 210.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0084",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 105.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0085",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 88.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0086",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0087",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0088",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 189.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0089",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 102.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0090",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 83.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0091",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "renamed import breaks binding",
+    "elapsed_seconds": 30.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0092",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 26.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0093",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "src and out both url",
+    "elapsed_seconds": 95.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0094",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 10.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0095",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 163.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0096",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 110.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0097",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 221.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0098",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 266.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0099",
+    "Task": "CS",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "garbled tokens break syntax",
+    "elapsed_seconds": 29.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0100",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "false and macros undefined",
+    "elapsed_seconds": 257.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0101",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 155.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0102",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 137.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0103",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 15.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0104",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "readAndRewrite→readAndrewrap",
+    "elapsed_seconds": 124.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0105",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 26.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0106",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "renamed struct field mapping",
+    "elapsed_seconds": 48.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0107",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 11.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0108",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 34.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0109",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 179.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0110",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 91.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0111",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "undefined variable lurl",
+    "elapsed_seconds": 35.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0112",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "read method renamed open",
+    "elapsed_seconds": 139.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0113",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 111.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0114",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 123.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0115",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 128.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0116",
+    "Task": "CS",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "int N to intJN",
+    "elapsed_seconds": 4.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0117",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 9.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0118",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 146.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0119",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 72.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0120",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 8.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0121",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 5.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0122",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 54.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0123",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 35.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0124",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "url.length() to url.Length()",
+    "elapsed_seconds": 33.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0125",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 22.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0126",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "duplicate parameter name hi",
+    "elapsed_seconds": 128.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0127",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 15.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0128",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 6.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0129",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 6.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0130",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 364.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0131",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "parseInt and System.in broken",
+    "elapsed_seconds": 161.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0132",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 81.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0133",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 70.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0134",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 138.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0135",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 172.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0136",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 74.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0137",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 32.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0138",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 16.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0139",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 9.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0140",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 179.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0141",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 123.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0142",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 4.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0143",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 146.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0144",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 51.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0145",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "unconfirmable_rewrite",
+    "note": "",
+    "elapsed_seconds": 103.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0146",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 5.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0147",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 6.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0148",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "undefined function seen",
+    "elapsed_seconds": 5.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0149",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "import nonexistent sys names",
+    "elapsed_seconds": 0.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0150",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 13.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0151",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 14.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0152",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 54.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0153",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 17.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0154",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": ".cache()",
+    "elapsed_seconds": 48.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0155",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 109.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0156",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 94.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0157",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 4.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0158",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 124.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0159",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 123.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0160",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "format placeholders unbound",
+    "elapsed_seconds": 212.1,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0161",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "undefined function bathroom",
+    "elapsed_seconds": 15.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0162",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 36.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0163",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 83.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0164",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "garbled assignment statements",
+    "elapsed_seconds": 18.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0165",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 178.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0166",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 3.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0167",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 9.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0168",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 159.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0169",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 50.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0170",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "constant replaced by pix_fmt",
+    "elapsed_seconds": 14.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0171",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 177.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0172",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "garbled swap statement",
+    "elapsed_seconds": 175.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0173",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 422.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0174",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "file and dir collide url",
+    "elapsed_seconds": 423.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0175",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "syntax_broken",
+    "note": "",
+    "elapsed_seconds": 184.9,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0176",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 115.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0177",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "split and xrange renamed",
+    "elapsed_seconds": 202.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0178",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "methods read entries renamed",
+    "elapsed_seconds": 23.0,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0179",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "read method renamed connect",
+    "elapsed_seconds": 82.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0180",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 93.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0181",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 106.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0182",
+    "Task": "AA",
+    "verdict": "invalid",
+    "failure_mode": "scope_conflict",
+    "note": "inner i shadows outer",
+    "elapsed_seconds": 190.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0183",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "renamed struct field out_buf",
+    "elapsed_seconds": 16.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0184",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 3.4,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0185",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 272.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0186",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 361.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0187",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 183.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0188",
+    "Task": "CS",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "public method renamed",
+    "elapsed_seconds": 32.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0189",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 52.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0190",
+    "Task": "CD",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "System.out renamed project",
+    "elapsed_seconds": 84.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0191",
+    "Task": "CS",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 5.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0192",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 6.5,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0193",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 7.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0194",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 19.8,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0195",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 18.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0196",
+    "Task": "VD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 6.2,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0197",
+    "Task": "AA",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 30.6,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0198",
+    "Task": "CS",
+    "verdict": "invalid",
+    "failure_mode": "binding_broken",
+    "note": "private method renamed",
+    "elapsed_seconds": 21.3,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0199",
+    "Task": "CD",
+    "verdict": "valid",
+    "failure_mode": "",
+    "note": "",
+    "elapsed_seconds": 17.7,
+    "timed_out": false
+  },
+  {
+    "Sample ID": "H0200",
+    "Task": "VD",
+    "verdict": "invalid",
+    "failure_mode": "unconfirmable_rewrite",
+    "note": "runner type and mode changed",
+    "elapsed_seconds": 34.0,
+    "timed_out": false
+  }
+]
