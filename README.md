@@ -16,32 +16,35 @@ set**:
 
 ## If you are an annotator — start here
 
-You only need the folder [`human_evaluation/annotator_kit/`](human_evaluation/annotator_kit).
-Nothing else.
+Download and extract [annotator_kit.zip](human_evaluation/annotator_kit.zip), or use
+the folder [`human_evaluation/annotator_kit/`](human_evaluation/annotator_kit).
+The ZIP includes an English README with setup and submission instructions.
+Python 3.10+ with Tkinter is required; no models are needed.
 
 ```bash
 cd human_evaluation/annotator_kit
-pip install -r requirement.txt   # Tkinter + Pygments (see note below)
+python -m pip install -r requirement.txt   # Pygments; see the Tkinter note below
 python annotate.py
 ```
 
-Enter your name. For each of the 200 samples you'll see the original code (left)
-and the adversarial code with the change highlighted (right), and answer:
+Enter your assigned annotator ID. Compare the original and modified code and
+answer: **Is the modified code valid and behavior-preserving?**
 
-> **Does this change alter the behavior of the original code?**
+- **Valid and behavior-preserving**
+- **Validity or behavior violation** — select one demonstrated failure mode
+  (syntax error, broken binding, scope conflict, broken block structure,
+  unsafe insertion, or behavior change).
+- **Cannot determine** — insufficient evidence for a clear judgment.
 
-- **Unchanged (valid)** — behavior preserved.
-- **Changed (invalid)** — behavior changed; then pick **one failure mode**
-  (Syntax broken / Binding broken / Scope conflict / Block structure broken / Unsafe insertion / Unconfirmable rewrite).
-- **Cannot determine** — cannot confidently judge.
+The English GUI includes full diff highlighting, optional notes, saved progress,
+and a 10-minute reminder that never selects an answer. Click **Save and next**
+to save. Reuse your ID to resume at the first unanswered sample.
 
-A soft **10-minute per-sample timer** nudges toward *Cannot determine* when it expires
-(it never overwrites a choice you already made). An optional note is recorded per
-sample. Your progress saves continuously.
-
-When finished, send back the single file
-`<yourname>_blind_samples_results.json`. That's it — you never see the attack
-method, the model, or the auto-validator's verdict.
+When finished, send the JSON file shown at the bottom of the window to the
+study coordinator. By default it is stored at
+`results/<yourname>_blind_samples_results.json` inside the kit. You can also
+use **Export results** to save a copy. The view hides attack methods, models,
+and automatic validator verdicts.
 
 > **Tkinter note:** on some Linux systems Tkinter ships via the system package
 > manager, not pip (e.g. `sudo apt install python3-tk`).
@@ -81,7 +84,7 @@ python -B human_evaluation/build_combined_blind.py --include-archive
 ```
 
 This writes `annotator_kit/blind_samples.json` (and refreshes the kit's
-`protocol.py`, `requirement.txt`, `README.md`), plus the private `blind_key.csv`
+`protocol.py` and `requirement.txt`; the maintained English README is retained), plus the private `blind_key.csv`
 and `blind_summary.csv`.
 
 **2. Collect** each annotator's `<name>_blind_samples_results.json`. You also

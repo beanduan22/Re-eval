@@ -1,30 +1,42 @@
-# Behavior-change annotation
+# Code Annotation Kit
 
-Thanks for annotating. You only need this folder.
+An offline Python desktop application for independently reviewing original and
+modified code. The bundled dataset contains 200 blind samples.
 
-## Install
+## Setup
 
-```bash
-pip install -r requirement.txt
-```
-
-## Annotate
+Extract the entire ZIP into a writable folder. Install Python 3.10 or newer with
+Tkinter, then open a terminal in this folder and run:
 
 ```bash
+python -m pip install -r requirement.txt
 python annotate.py
 ```
 
-Enter your name, then for each of the 200 samples answer
-**"Does this change alter the behavior of the original code?"**:
+After setup, Windows users can also double-click `start_annotation.bat`.
+On macOS or Linux, use `python3` if `python` is unavailable. On Linux, a missing
+Tkinter module may require the system `python3-tk` package.
+No models or other repository dependencies are needed.
 
-- **Unchanged (valid)** — behavior preserved.
-- **Changed (invalid)** — behavior changed; then pick one failure mode.
-- **Cannot determine** — cannot confidently judge.
+## Annotate
 
-A soft 10-minute per-sample timer nudges toward *Cannot determine* when it runs out. An
-optional note is recorded per sample. Your progress is saved continuously to
-`<yourname>_blind_samples_results.json`.
+Enter your assigned annotator ID. Compare the two code panels and select:
 
-## Send back
+- **Valid and behavior-preserving**
+- **Validity or behavior violation** (select a failure mode)
+- **Cannot determine**
 
-When done, send back the single file `<yourname>_blind_samples_results.json`.
+Add an optional note, then click **Save and next**. Use **Show full diff** to see
+added and deleted lines. The application displays code without executing it.
+
+## Resume and submit
+
+Use the same annotator ID to resume at the first unanswered sample. Saved answers
+are stored by default in `results/YOUR_ID_blind_samples_results.json`; the window
+always shows the actual path. Use a separate ID for each annotator.
+
+When finished, click **Finish annotation** and send the result JSON file to the
+study coordinator. **Export results** saves a copy to a location of your choice.
+
+See [INSTRUCTIONS.txt](INSTRUCTIONS.txt) for the full annotation guidance,
+troubleshooting, and coordinator notes.

@@ -1,0 +1,63 @@
+Code Annotation Kit
+===================
+
+1. Install and start
+Extract the entire kit into a writable folder. Keep annotate.py, protocol.py,
+and blind_samples.json together.
+Install Python 3.10 or newer. On Windows, include Tcl/Tk in the Python installation.
+Open a terminal in this folder and install the dependency once:
+    python -m pip install -r requirement.txt
+Start the application:
+    python annotate.py
+On Windows, you can also double-click start_annotation.bat after setup.
+On macOS or Linux, use python3 if python is unavailable.
+If Linux reports "No module named tkinter", install the system python3-tk package.
+
+No model downloads, deep learning libraries, or attack runs are needed.
+The application works offline after installing its dependency.
+
+2. Annotate
+Enter the annotator ID assigned by the study coordinator. Use the same ID to resume.
+Compare the original code on the left with the modified code on the right.
+Green marks added lines; the full diff also shows deleted lines in red.
+Code is displayed for review only and is never executed.
+
+Choose one verdict:
+- Valid and behavior-preserving: the code is valid and preserves observable behavior.
+- Validity or behavior violation: a demonstrated error or behavior change.
+  Select one main failure mode.
+- Cannot determine: insufficient context or evidence for a clear judgment.
+
+Use the optional note to identify relevant code or explain your judgment.
+Aim for no more than 10 minutes per sample. The timer never chooses an answer.
+Click "Save and next" to continue. Ctrl+S saves; "Previous" revisits earlier samples.
+Navigating or closing with unsaved changes prompts you to save, discard, or cancel.
+Work independently without referring to another annotator's answers.
+
+3. Resume and submit
+Results are saved separately by annotator ID next to the sample file:
+    results/YOUR_ID_blind_samples_results.json
+The actual result path is always displayed at the bottom of the window.
+Each save writes immediately to disk. Restart with the same ID to load your answers
+and resume at the first unanswered sample.
+If a matching legacy result file exists in the working directory, the application
+continues using that file. Its path is shown in the window.
+Do not open multiple windows using the same ID and result file at the same time.
+Unsaved answers cannot be recovered after a power failure or forced termination.
+
+When finished, click "Finish annotation" and send the indicated JSON file to the
+study coordinator. "Export results" saves a copy; partial exports contain only
+saved records. Do not rename or replace the sample file during a task.
+Use a separate kit folder for each new task.
+
+4. Study coordinators
+Distribute the kit without blind_key.csv, other annotators' answers, or arbitration
+records. This prebuilt kit has 200 blind samples. Generated kits may have a different
+number of samples; the application displays the actual count.
+Use build_combined_blind.py in the repository to generate a new kit.
+The result fields remain compatible with summarize_behavior_change.py and the
+matching private key. Samples do not contain prefilled human judgments.
+
+Optional arguments:
+    python annotate.py --username annotator1
+    python annotate.py --data /path/to/blind_samples.json --results-dir /path/to/results
